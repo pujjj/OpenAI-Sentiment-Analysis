@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    .plot-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    .plot-container > div {
+      width: 45%;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Sentiment Distribution and Rating Count</h1>
+  <div class="plot-container">
+    <div>
+      <h2 style="text-align: center;">Sentiment Distribution</h2>
+      <img src="{{ sentiment_plot_file }}" alt="Sentiment Distribution">
+    </div>
+    <div>
+      <h2 style="text-align: center;">Rating Count</h2>
+      <img src="{{ rating_plot_file }}" alt="Rating Count">
+    </div>
+  </div>
+    <div style="margin: 10px;">
+    <h2 style="text-align: center;">Sentiment Trend</h2>
+    <img src="{{datevsentiment_plot_file }}" alt="Rating Count" style="text-align: center;">
+  </div>
+  <h2>Overall Pros</h2>
+  <p>{{ overall_pros }}</p>
+
+  <h2>Overall Cons</h2>
+  <p>{{ overall_cons }}</p>
+</body>
+</html>

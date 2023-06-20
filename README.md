@@ -20,6 +20,16 @@ Install OpenAI package:
 ```bash
   pip install openai 
 ```
+Install matplotlib for plots
+```bash
+pip install matplotlib 
+```     
+
+Go to **app.py** and replace the below with your api key
+
+```python3
+openai.api_key = "my-api-key" 
+```
 
 ### Run Program
 To run the program:
